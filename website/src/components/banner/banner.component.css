@@ -1,0 +1,10 @@
+.banner-container {
+    background: #5826E1;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+

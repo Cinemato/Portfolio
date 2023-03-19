@@ -1,0 +1,31 @@
+.banner-text {
+    color: #FFF;
+    margin-right: 100px;
+    z-index: 10;
+}
+
+.banner-text > h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.banner-text > h3 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.banner-text > h3 > span {
+    color: #FF3C68;
+}
+
+.banner-text > button {
+    margin-top: 10px;
+    background: #FF3C68;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+}
