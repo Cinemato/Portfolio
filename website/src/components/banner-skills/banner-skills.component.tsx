@@ -2,11 +2,18 @@ import React, { useState, useEffect } from 'react';
 import './banner-skills.component.css';
 import SKILLS_DATA, { Skill } from '../../data/skills';
 
+
+let firstRender = true;
+
 const BannerSkills = () => {
   const CREATE_CIRCLE_MS = 5000;
   const ARRAY_OF_SKILLS: Skill[] = [];
 
   useEffect(() => {
+    if(!firstRender) {
+      return;
+    }
+
     const skillsContainer = document.getElementsByClassName('banner-skills-container')[0];
     let prevInitPos = Math.floor(Math.random() * 1650) - 150;
 
@@ -17,9 +24,9 @@ const BannerSkills = () => {
       const logo = document.createElement('img');
       let randomSkill = SKILLS_DATA[Math.floor(Math.random() * SKILLS_DATA.length)];
       
-      // while(ARRAY_OF_SKILLS.indexOf(randomSkill) >= 0) {
-      //   randomSkill = SKILLS_DATA[Math.floor(Math.random() * SKILLS_DATA.length)];
-      // }
+      while(ARRAY_OF_SKILLS.indexOf(randomSkill) >= 0) {
+        randomSkill = SKILLS_DATA[Math.floor(Math.random() * SKILLS_DATA.length)];
+      }
 
       logo.src = randomSkill.img;
       ARRAY_OF_SKILLS.push(randomSkill);
@@ -52,6 +59,8 @@ const BannerSkills = () => {
           circle.style.visibility = 'visible';
         }
       }
+
+      firstRender = false;
     }
 
     createDiagonalCircle();
