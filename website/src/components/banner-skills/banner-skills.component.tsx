@@ -17,9 +17,9 @@ const BannerSkills = () => {
       const logo = document.createElement('img');
       let randomSkill = SKILLS_DATA[Math.floor(Math.random() * SKILLS_DATA.length)];
       
-      while(ARRAY_OF_SKILLS.indexOf(randomSkill) >= 0) {
-        randomSkill = SKILLS_DATA[Math.floor(Math.random() * SKILLS_DATA.length)];
-      }
+      // while(ARRAY_OF_SKILLS.indexOf(randomSkill) >= 0) {
+      //   randomSkill = SKILLS_DATA[Math.floor(Math.random() * SKILLS_DATA.length)];
+      // }
 
       logo.src = randomSkill.img;
       ARRAY_OF_SKILLS.push(randomSkill);
