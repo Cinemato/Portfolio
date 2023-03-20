@@ -1,23 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './banner-skills.component.css';
 import SKILLS_DATA, { Skill } from '../../data/skills';
 
-
-let firstRender = true;
-
 const BannerSkills = () => {
-  const CREATE_CIRCLE_MS = 5000;
+  const CREATE_CIRCLE_MS = 4000;
   const ARRAY_OF_SKILLS: Skill[] = [];
+  const isFirstRender = useRef(true);
 
   useEffect(() => {
-    if(!firstRender) {
-      return;
-    }
-
     const skillsContainer = document.getElementsByClassName('banner-skills-container')[0];
     let prevInitPos = Math.floor(Math.random() * 1650) - 150;
 
-    const createDiagonalCircle = (): void => {
+    const createDiagonalCircle = () => {
+      if(ARRAY_OF_SKILLS.length > 7) {
+        return;
+      }
       const circle = document.createElement('div');
       circle.classList.add('skill-circle');
       skillsContainer.appendChild(circle);
@@ -59,15 +56,14 @@ const BannerSkills = () => {
           circle.style.visibility = 'visible';
         }
       }
-
-      firstRender = false;
+      isFirstRender.current = false;
     }
 
-    createDiagonalCircle();
-
-    const spawnCirclesInterval = setInterval(createDiagonalCircle, CREATE_CIRCLE_MS);
-
-    return () => clearInterval(spawnCirclesInterval);
+    if(isFirstRender.current === true) {
+      createDiagonalCircle();
+      const spawnCirclesInterval = setInterval(createDiagonalCircle, CREATE_CIRCLE_MS);
+      return () => clearInterval(spawnCirclesInterval);   
+    }
   }, [])
 
   return (
