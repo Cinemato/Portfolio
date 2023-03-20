@@ -19,5 +19,6 @@
 
 .nav-bar-container p:hover {
     border-bottom: 5px solid #FF3C68;  
-    border-radius: 5px;   
+    border-radius: 5px;
+    text-shadow: 2px 1.5px #FF3C68;
 }

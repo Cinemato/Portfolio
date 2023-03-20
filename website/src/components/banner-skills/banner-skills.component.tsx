@@ -3,7 +3,7 @@ import './banner-skills.component.css';
 import SKILLS_DATA, { Skill } from '../../data/skills';
 
 const BannerSkills = () => {
-  const CREATE_CIRCLE_MS = 4000;
+  const CREATE_CIRCLE_MS = 4500;
   const ARRAY_OF_SKILLS: Skill[] = [];
   const isFirstRender = useRef(true);
 
@@ -12,7 +12,7 @@ const BannerSkills = () => {
     let prevInitPos = Math.floor(Math.random() * 1650) - 150;
 
     const createDiagonalCircle = () => {
-      if(ARRAY_OF_SKILLS.length > 7) {
+      if(ARRAY_OF_SKILLS.length >= 6) {
         return;
       }
       const circle = document.createElement('div');
@@ -44,7 +44,7 @@ const BannerSkills = () => {
       let moveCirclesInterval = setInterval(frame, size - (size * 0.65));
       
       function frame() {
-        if (posTop === 600) {
+        if (posTop === 500) {
           skillsContainer.removeChild(circle);
           ARRAY_OF_SKILLS.splice(ARRAY_OF_SKILLS.indexOf(randomSkill), 1);
           clearInterval(moveCirclesInterval);
