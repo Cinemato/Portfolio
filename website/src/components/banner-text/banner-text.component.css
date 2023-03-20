@@ -1,56 +1,33 @@
 .banner-text {
     color: #FFF;
     margin-right: 100px;
-    width: 500px;
-    
+    width: 550px;
+    z-index: 3;
 }
 
 .banner-text > h2 {
     font-size: 50px;
     margin-bottom: 10px;
     font-weight: 600;
-    position: relative;
-    z-index: 3;
 }
 
-.banner-text > h3 {
+.banner-text > h3, .animated-text > h3, .animated-text > span {
     font-size: 35px;
     margin-bottom: 10px;
     font-weight: 600;
-    position: relative;
 }
 
-.banner-text > h3:first-of-type {
-    z-index: 3;
-}
-
-.animated-text {
+.animated-text > span {
     color: #FF3C68;
-    position: relative;
     font-weight: 700;
 }
 
-.animated-text::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: #5826E1;
-    border-left: 2px solid #FF3C68;
-    animation: typing 4s steps(12) infinite;
-    z-index: 1;
+.animated-text {
+    display: flex;
 }
 
-@keyframes typing {
-    40%, 60% {
-        left: calc(100% + 4px);
-    }
-
-    100% {
-        left: 0;
-    }
+.animated-text > h3 {
+    margin-right: 10px;
 }
 
 .banner-text > button {
@@ -62,8 +39,6 @@
     font-size: 17px;
     cursor: pointer;
     transition: box-shadow 0.2s linear, transform 0.2s linear, font-weight 0.2s linear;
-    position: relative;
-    z-index: 3;
 }
 
 .banner-text > button:hover {
