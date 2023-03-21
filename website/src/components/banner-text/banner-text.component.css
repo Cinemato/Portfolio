@@ -9,6 +9,7 @@
     font-size: 50px;
     margin-bottom: 10px;
     font-weight: 600;
+    text-shadow: 3px 4px #FF3C68;
 }
 
 .banner-text > h3, .animated-text > h3, .animated-text > span {
