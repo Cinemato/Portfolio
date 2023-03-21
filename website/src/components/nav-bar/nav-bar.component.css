@@ -14,11 +14,12 @@
     cursor: pointer;
     border-bottom: 0px solid #FF3C68;
     padding-bottom: 3px;
-    transition: all 0.25s linear;
+    transition: border 0.15s linear, border-radius 0.15s linear, text-shadow 0.15s linear, font-weight 0.15s ease-in-out;
 }
 
 .nav-bar-container p:hover {
     border-bottom: 5px solid #FF3C68;  
     border-radius: 5px;
     text-shadow: 2px 1.5px #FF3C68;
+    font-weight: 600;
 }
