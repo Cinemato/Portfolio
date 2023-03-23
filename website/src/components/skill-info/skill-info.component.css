@@ -1,0 +1,11 @@
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.skill > p {
+    font-size: 18px;
+    margin-top: 10px;
+}

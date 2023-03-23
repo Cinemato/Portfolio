@@ -14,56 +14,69 @@ import unityLogo from '../assets/skills/unity-logo.svg';
 interface Skill {
     id: number,
     img: string
+    title?: string
 }
 
 const SKILLS_DATA: Skill[] = [
     {
         id: 1,
-        img: phpLogo
+        img: phpLogo,
+        title: "PHP"
     },
     {
         id: 2,
-        img: laravelLogo
+        img: laravelLogo,
+        title: "Laravel"
     },
     {
         id: 3,
-        img: htmlLogo
+        img: htmlLogo,
+        title: "HTML"
     },
     {
         id: 4,
-        img: jsLogo
+        img: jsLogo,
+        title: "JavaScript"
     },
     {
         id: 5,
-        img: tsLogo
+        img: tsLogo,
+        title: "TypeScript"
     },
     {
         id: 6,
-        img: cssLogo
+        img: cssLogo,
+        title: "CSS"
     },
     {
         id: 7,
-        img: reactLogo
+        img: reactLogo,
+        title: "React"
     },
     {
         id: 8,
-        img: xamppLogo
+        img: xamppLogo,
+        title: "XAMPP"
     },
     {
         id: 9,
-        img: javaLogo
+        img: javaLogo,
+        title: "Java"
     },
     {
         id: 10,
-        img: mysqlLogo
+        img: mysqlLogo,
+        title: "MySQL"
     },
     {
         id: 11,
-        img: reduxLogo
+        img: reduxLogo,
+        title: "Redux"
     },
     {
         id: 12,
-        img: unityLogo
+        img: unityLogo,
+        title: "Unity"
     },
 ]
 
