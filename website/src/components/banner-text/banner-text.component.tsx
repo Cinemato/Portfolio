@@ -16,9 +16,9 @@ const BannerText = () => {
                 loop: true,
                 delay: 40,
                 strings: [
-                  "Back-End Web Developer",
-                  "Front-End Web Developer",
-                  "Full Stack Web Developer",
+                  "Back-End Developer",
+                  "Front-End Developer",
+                  "Full Stack Developer",
                   "Software Engineer"
                 ],
               }}

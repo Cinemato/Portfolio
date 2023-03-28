@@ -47,3 +47,40 @@
     transform: translateX(-5px);
     font-weight: 700;
 }
+
+@media screen and (max-width: 1000px) {
+    .banner-text {
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .banner-text {
+        margin-right: 0px;
+        text-align: center;
+    }
+
+    .animated-text {
+        display: block;
+    }
+
+    .animated-text > h3, .animated-text > span {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .banner-text > h2 {
+        font-size: 13vw;
+        margin-bottom: 13px;
+    }
+    
+    .animated-text > h3, .animated-text > span {
+        font-size: 7.5vw;
+    }
+
+    .banner-text > h3 {
+        font-size: 8.5vw;
+        margin-bottom: 13px;
+    }
+}
