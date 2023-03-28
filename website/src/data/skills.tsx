@@ -10,12 +10,8 @@ import javaLogo from '../assets/skills/java-logo.svg';
 import mysqlLogo from '../assets/skills/mysql-logo.svg';
 import reduxLogo from '../assets/skills/redux-logo.svg';
 import unityLogo from '../assets/skills/unity-logo.svg';
+import { Skill } from './interfaces';
 
-interface Skill {
-    id: number,
-    img: string
-    title?: string
-}
 
 const SKILLS_DATA: Skill[] = [
     {

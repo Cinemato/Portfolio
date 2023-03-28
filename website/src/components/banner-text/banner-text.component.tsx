@@ -1,35 +1,8 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import './banner-text.component.css';
 import TypewriterComponent from 'typewriter-effect';
 
 const BannerText = () => {
-  
-  // setTimeout(() => {
-  //   const animatedText = document.getElementsByClassName('animated-text')[0];
-
-  //   const changeAnimatedText = (): void => {
-  //     setTimeout(() => {
-  //       console.log(animatedText);
-  //       animatedText.textContent = "Back-End Web Developer";
-  //     }, 0)
-  
-  //     setTimeout(() => {
-  //       animatedText.textContent = "Front-End Web Developer";
-  //     }, 4000)
-  
-  //     setTimeout(() => {
-  //       animatedText.textContent = "Full Stack Web Developer";
-  //     }, 8000)
-  
-  //     setTimeout(() => {
-  //       animatedText.textContent = "Software Engineer";
-  //     }, 12000)
-  //   }
-
-  // changeAnimatedText();
-  // setInterval(changeAnimatedText, 16000);
-  // }, 1);
-
   return (
     <div className="banner-text">
         <h2>Hello!</h2>

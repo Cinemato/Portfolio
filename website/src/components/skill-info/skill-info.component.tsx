@@ -1,6 +1,6 @@
 import React from 'react'
 import './skill-info.component.css'
-import { Skill } from '../../data/skills'
+import { Skill } from '../../data/interfaces'
 
 interface IProps {
     skill: Skill

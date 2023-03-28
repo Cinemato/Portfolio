@@ -3,6 +3,7 @@ import './skills-section.component.css';
 import SKILLS_DATA from '../../data/skills';
 import SectionTitle from '../section-title/section-title.component';
 import SkillInfo from '../skill-info/skill-info.component';
+import ViewAllButton from '../view-all-button/view-all-button.component';
 
 const SkillsSection = () => {
   return (
@@ -13,6 +14,7 @@ const SkillsSection = () => {
                 <SkillInfo skill={skill} />
             ))}
         </div>
+        <ViewAllButton />
     </div>
   )
 }

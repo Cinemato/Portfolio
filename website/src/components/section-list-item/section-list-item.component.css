@@ -1,0 +1,21 @@
+.section-list-item {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.section-list-item:last-child {
+    margin-bottom: 0;
+}
+
+.item-img {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 2000px;
+    height: 255px;
+    margin-right: 50px;
+    border: 1px solid #FF3C68;
+}
+

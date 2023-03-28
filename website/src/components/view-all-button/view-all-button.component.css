@@ -1,0 +1,9 @@
+.view-all {
+    background: none;
+    border: none;
+    color: #FF3C68;
+    border-bottom: 2px solid #FF3C68;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 15px;
+}
