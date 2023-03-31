@@ -9,7 +9,7 @@
     width: 120px;
     transition: box-shadow 0.2s linear, transform 0.2s linear, font-weight 0.2s linear;
     margin-top: 10px;
-    align-self: flex-start;
+   
 }
 
 .section-button:hover {
