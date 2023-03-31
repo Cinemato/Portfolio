@@ -1,0 +1,96 @@
+.contact-section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.contact-info > p {
+    margin-left: 5px;
+}
+
+.social-info {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-info svg {
+    width: 110px;
+    height: 110px;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.contact-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form > p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.form-input > label {
+    margin-bottom: 5px;
+}
+
+.form-input > input, .form-input > textarea {
+    outline: none;
+    padding: 5px 10px;
+    border: 2px solid #FF3C68;
+    border-radius: 5px;
+    transition: border 100ms ease-in-out;
+}
+
+.form-input > textarea {
+    resize: none;
+}
+
+.form-input > input:focus, .form-input > textarea:focus {
+    border: 3px solid #FF3C68;
+}
+
+.contact-form > button {
+    background: #FF3C68;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: box-shadow 0.2s linear, transform 0.2s linear, font-weight 0.2s linear;
+    margin-top: 10px;
+}
+
+.contact-form > button:hover {
+    box-shadow: 4px 4px #000;
+    transform: translateX(-5px);
+    font-weight: 700;
+}
+
+@media screen and (max-width: 600px) {
+    .form-input {
+        width: 80vw;
+    }
+}

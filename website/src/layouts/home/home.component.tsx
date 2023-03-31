@@ -6,6 +6,8 @@ import SkillsSection from '../../components/skills-section/skills-section.compon
 import SectionList from '../../components/section-list/section-list.component';
 import PROJECTS_DATA from '../../data/projects';
 import EDUCATION_DATA from '../../data/education';
+import ContactSection from '../../components/contact-section/contact-section.component';
+import Copyright from '../../components/copyright/copyright.component';
 
 const Home = () => {
   return (
@@ -15,6 +17,8 @@ const Home = () => {
       <SkillsSection />
       <SectionList title="Projects & Works" items={PROJECTS_DATA} />
       <SectionList title="Education" items={EDUCATION_DATA} />
+      <ContactSection />
+      <Copyright />
     </div>
   )
 }
