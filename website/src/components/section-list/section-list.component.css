@@ -7,3 +7,9 @@
 .section-list-items-container {
     width: 70%;
 }
+
+@media screen and (max-width: 1600px) {
+    .section-list-items-container {
+        width: 85%;
+    }
+}
