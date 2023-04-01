@@ -93,4 +93,8 @@
     .form-input {
         width: 80vw;
     }
+
+    .contact-form > p {
+        width: 70vw;
+    }
 }
