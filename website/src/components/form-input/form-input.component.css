@@ -1,0 +1,29 @@
+.form-input {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.form-input > label {
+    margin-bottom: 5px;
+}
+
+.form-input > input, .form-input > textarea {
+    outline: none;
+    padding: 5px 10px;
+    border: 2px solid #FF3C68;
+    border-radius: 5px;
+    transition: border 200ms linear;
+}
+
+.form-input > input:focus, .form-input > textarea:focus {
+    border: 3.5px solid #FF3C68;
+}
+
+@media screen and (max-width: 600px) {
+    .form-input {
+        width: 80vw;
+    }
+}

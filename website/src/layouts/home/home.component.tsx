@@ -1,6 +1,7 @@
 import React from 'react'
 import './home.component.css';
 import NavBar from '../../components/nav-bar/nav-bar.component';
+import MobileNavBar from '../../components/mobile-nav-bar/mobile-nav-bar.component';
 import Banner from '../../components/banner/banner.component'
 import SkillsSection from '../../components/skills-section/skills-section.component';
 import SectionList from '../../components/section-list/section-list.component';
@@ -13,6 +14,7 @@ const Home = () => {
   return (
     <div className="home-container">
       <NavBar />
+      <MobileNavBar />
       <Banner />
       <SkillsSection />
       <SectionList title="Projects & Works" items={PROJECTS_DATA} />
