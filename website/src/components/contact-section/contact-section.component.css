@@ -4,3 +4,15 @@
     align-items: center;
     margin-bottom: 20px;
 }
+
+.contact-container {
+    display: flex;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .contact-container {
+        flex-direction: column;
+        margin-top: 0;
+    }
+}

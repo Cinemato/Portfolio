@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import './banner-skills.component.css';
 import SKILLS_DATA, { Skill } from '../../data/skills';
 
@@ -9,12 +9,25 @@ const BannerSkills = () => {
 
   useEffect(() => {
     const skillsContainer = document.getElementsByClassName('banner-skills-container')[0];
-    let prevInitPos = Math.floor(Math.random() * 1650) - 150;
+    let minScreenSize = window.screen.width * 0.08;
+    let maxScreenSize = window.screen.width * 0.85;
+    let maxCircles = 6;
+    let prevInitPos = Math.floor(Math.random() * maxScreenSize) - minScreenSize;
 
     const createDiagonalCircle = () => {
-      if(ARRAY_OF_SKILLS.length >= 6) {
+      if(window.screen.width <= 500) {
+        minScreenSize = window.screen.width * 0.8;
+        maxCircles = 4;
+      }
+      else {
+        minScreenSize = window.screen.width * 0.08;
+        maxCircles = 6;
+      }
+
+      if(ARRAY_OF_SKILLS.length >= maxCircles) {
         return;
       }
+      
       const circle = document.createElement('div');
       circle.classList.add('skill-circle');
       skillsContainer.appendChild(circle);
@@ -34,10 +47,10 @@ const BannerSkills = () => {
       circle.style.height = size + 'px';
 
       let posTop = -150;
-      let posLeft = Math.floor(Math.random() * (window.screen.width * 0.85)) - (window.screen.width * 0.08);
+      let posLeft = Math.floor(Math.random() * maxScreenSize) - minScreenSize;
 
       while(Math.abs(posLeft - prevInitPos) < (window.screen.width * 0.13)) {
-        posLeft = Math.floor(Math.random() * (window.screen.width * 0.85)) - (window.screen.width * 0.08);
+        posLeft = Math.floor(Math.random() * maxScreenSize) - minScreenSize;
       }
       
       prevInitPos = posLeft;

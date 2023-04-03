@@ -17,7 +17,7 @@ const SectionList: React.FC<IProps> = ({items, title}) => {
             <SectionTitle title={title} />
             <div className="section-list-items-container">
                 {items.map(item => {
-                    return <SectionListItem item={item} />
+                    return <SectionListItem item={item} key={item.id} />
                 })}
             </div>
             <ViewAllButton />

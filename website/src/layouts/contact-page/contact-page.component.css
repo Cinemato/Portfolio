@@ -1,0 +1,11 @@
+.contact-page-container > .nav-bar-container {
+    background: #5826E1;
+    width: 100%;
+    position: static;
+    padding: 40px 80px;
+    height: 105px;
+}
+
+.contact-page-container .mobile-nav-icon svg {
+    background: #5826E1;
+}

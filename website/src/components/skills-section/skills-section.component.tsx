@@ -11,7 +11,7 @@ const SkillsSection = () => {
         <SectionTitle title="Technical Skills" />
         <div className="skills-container">
             {SKILLS_DATA.map((skill) => (
-                <SkillInfo skill={skill} />
+                <SkillInfo skill={skill} key={skill.id} />
             ))}
         </div>
         <ViewAllButton />
