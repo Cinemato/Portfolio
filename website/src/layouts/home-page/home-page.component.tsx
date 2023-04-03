@@ -16,8 +16,8 @@ const HomePage = () => {
       <MobileNavBar activePage="home" />
       <Banner />
       <SkillsSection />
-      <SectionList title="Projects & Works" items={PROJECTS_DATA} />
-      <SectionList title="Education" items={EDUCATION_DATA} />
+      <SectionList path="/projects" title="Projects & Works" items={PROJECTS_DATA} />
+      <SectionList path="/education" title="Education" items={EDUCATION_DATA} />
       <Copyright />
     </div>
   )

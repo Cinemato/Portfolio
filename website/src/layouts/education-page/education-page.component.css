@@ -9,3 +9,7 @@
 .education-page-container .mobile-nav-icon svg {
     background: #5826E1;
 }
+
+.education-page-container .view-all {
+    display: none;
+}

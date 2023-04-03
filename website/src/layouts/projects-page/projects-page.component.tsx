@@ -11,7 +11,7 @@ const ProjectsPage = () => {
     <div className="projects-page-container">
       <NavBar activePage="projects" />
       <MobileNavBar activePage="projects" />
-      <SectionList title="Projects & Works" items={PROJECTS_DATA} />
+      <SectionList path="/projects" title="Projects & Works" items={PROJECTS_DATA} />
       <Copyright />
     </div>
   )

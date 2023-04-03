@@ -11,7 +11,7 @@ const EducationPage = () => {
     <div className="education-page-container">
       <NavBar activePage="education" />
       <MobileNavBar activePage="education" />
-      <SectionList title="Education" items={EDUCATION_DATA} />
+      <SectionList path="education" title="Education" items={EDUCATION_DATA} />
       <Copyright />
     </div>
   )
