@@ -3,12 +3,13 @@ import './skill-info.component.css'
 import { Skill } from '../../data/interfaces'
 
 interface IProps {
-    skill: Skill
+    skill: Skill,
+    view: boolean
 }
 
-const SkillInfo: React.FC<IProps> = ({skill}) => {
+const SkillInfo: React.FC<IProps> = ({skill, view}) => {
   return (
-    <div className="skill">
+    <div className={`skill ${view ? 'skill-active' : ''}`}>
         <img src={skill.img} alt={skill.title} width="125px" />
         <p>{skill.title}</p>
     </div>

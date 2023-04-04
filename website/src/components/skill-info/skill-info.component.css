@@ -1,13 +1,23 @@
 .skill {
+    display: none;
+    margin: 20px 5%;
+}
+
+.skill-active {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
 }
 
 .skill > p {
     font-size: 18px;
     margin-top: 10px;
+}
+
+@media screen and (max-width: 1400px) {
+    .skill {
+        margin: 20px;
+    }
 }
 
 @media screen and (max-width: 550px) {

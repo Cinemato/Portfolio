@@ -22,7 +22,7 @@ const SectionList: React.FC<IProps> = ({path, items, title}) => {
                     return <SectionListItem item={item} key={item.id} />
                 })}
             </div>
-            <Link to={path}><ViewAllButton /></Link>
+            <Link to={path}><ViewAllButton content='View all'/></Link>
         </div>
     )
 }
