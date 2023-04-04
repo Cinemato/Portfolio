@@ -9,7 +9,7 @@ const ContactSection = () => {
     <div className="contact-section-container" id='contact'>
          <SectionTitle title="Contact Me" />
          <div className="contact-container">
-           <ContactInfo />
+          <ContactInfo />
           <ContactForm />
          </div>
     </div>

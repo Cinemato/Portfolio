@@ -1,3 +1,7 @@
+.contact-info-container {
+    animation: transitionX 0.75s;
+}
+
 .contact-info {
     display: flex;
     align-items: center;

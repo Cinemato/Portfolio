@@ -3,6 +3,7 @@
     margin-right: 100px;
     width: 550px;
     z-index: 3;
+    animation: transitionX 0.75s;
 }
 
 .banner-text > h2 {
@@ -47,6 +48,7 @@
     transform: translateX(-5px);
     font-weight: 700;
 }
+
 
 @media screen and (max-width: 1000px) {
     .banner-text {

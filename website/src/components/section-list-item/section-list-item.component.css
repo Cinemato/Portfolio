@@ -4,6 +4,7 @@
     align-items: center;
     margin: auto;
     margin-bottom: 45px;
+    animation: transitionY 0.75s;
 }
 
 .section-list-item:last-child {

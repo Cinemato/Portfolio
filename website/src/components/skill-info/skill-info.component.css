@@ -1,6 +1,7 @@
 .skill {
     display: none;
     margin: 20px 5%;
+    animation: transitionY 2s;
 }
 
 .skill-active {

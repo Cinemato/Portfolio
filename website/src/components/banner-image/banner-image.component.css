@@ -1,5 +1,6 @@
 .banner-image {
     z-index: 10;
+    animation: transitionX 0.75s;
 }
 
 @media screen and (max-width: 900px) {

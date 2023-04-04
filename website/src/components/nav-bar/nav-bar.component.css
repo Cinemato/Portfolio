@@ -6,6 +6,7 @@
     color: white;
     font-weight: 500;
     display: flex;
+    animation: transitionY 0.75s;
 }
 
 .nav-bar-container p {
