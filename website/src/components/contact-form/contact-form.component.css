@@ -31,6 +31,23 @@
     font-weight: 700;
 }
 
+.success-noti {
+    background: rgba(26, 240, 26, 0.712);
+    color:  rgb(14, 162, 14);
+    border: 2px solid rgb(14, 162, 14);
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    display: none;
+}
+
+.noti-active {
+    display: block;
+    animation: transitionX 0.75s;
+}
+
 @media screen and (max-width: 800px) {
     .contact-form {
         margin-left: 0;
