@@ -3,21 +3,23 @@ import './contact-info.component.css'
 import { ReactComponent as Email }  from '../../assets/contact/email.svg'
 import { ReactComponent as Phone } from '../../assets/contact/phone.svg'
 import { ReactComponent as Linkedin } from '../../assets/contact/linkedin.svg'
+import { ReactComponent as Github } from '../../assets/contact/github.svg'
+import { Link } from 'react-router-dom'
 
 const ContactInfo = () => {
   return (
     <div className="contact-info-container">
         <div className="contact-info">
             <Email />
-            <p>alharerekhaled@gmail.com</p>
+            <Link to="mailto:alharerekhaled@gmail.com" className='contact-text'>alharerekhaled@gmail.com</Link>
         </div>
         <div className="contact-info">
             <Phone />
-            <p>+90 539 361 5823</p>
+            <Link to="tel:+90 539 361 5823" className='contact-text'>+90 539 361 5823</Link>
         </div>
         <div className="social-info">
-            <Linkedin />
-            <Linkedin />
+            <Link to="https://www.linkedin.com/in/khaled-alhariri/" target='_blank'><Linkedin /></Link>
+            <Link to="https://github.com/Cinemato" target='_blank'><Github /></Link>
         </div>
     </div>
   )

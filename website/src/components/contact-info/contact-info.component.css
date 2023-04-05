@@ -9,8 +9,15 @@
     margin-bottom: 15px;
 }
 
-.contact-info > p {
+.contact-info > .contact-text {
     margin-left: 5px;
+    color: black;
+    text-decoration: none;
+    transition: color 200ms linear;
+}
+
+.contact-text:hover {
+    color: #FF3C68;
 }
 
 .social-info {
