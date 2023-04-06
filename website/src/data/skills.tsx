@@ -1,3 +1,8 @@
+import csharpLogo from '../assets/skills/csharp-logo.svg';
+import figmaLogo from '../assets/skills/figma-logo.svg';
+import firebaseLogo from '../assets/skills/firebase-logo.svg';
+import gitLogo from '../assets/skills/git-logo.svg';
+import pythonLogo from '../assets/skills/python-logo.svg';
 import phpLogo from '../assets/skills/php-logo.svg';
 import laravelLogo from '../assets/skills/laravel-logo.svg';
 import htmlLogo from '../assets/skills/html-logo.svg';
@@ -25,9 +30,9 @@ const SKILLS_DATA: Skill[] = [
         title: "Laravel"
     },
     {
-        id: 3,
-        img: htmlLogo,
-        title: "HTML"
+        id: 4,
+        img: reactLogo,
+        title: "React"
     },
     {
         id: 4,
@@ -41,23 +46,18 @@ const SKILLS_DATA: Skill[] = [
     },
     {
         id: 6,
+        img: htmlLogo,
+        title: "HTML"
+    },
+    {
+        id: 7,
         img: cssLogo,
         title: "CSS"
     },
     {
-        id: 7,
-        img: reactLogo,
-        title: "React"
-    },
-    {
         id: 8,
-        img: xamppLogo,
-        title: "XAMPP"
-    },
-    {
-        id: 9,
-        img: javaLogo,
-        title: "Java"
+        img: reduxLogo,
+        title: "Redux"
     },
     {
         id: 10,
@@ -65,14 +65,44 @@ const SKILLS_DATA: Skill[] = [
         title: "MySQL"
     },
     {
+        id: 10,
+        img: xamppLogo,
+        title: "XAMPP"
+    },
+    {
         id: 11,
-        img: reduxLogo,
-        title: "Redux"
+        img: firebaseLogo,
+        title: "Firebase"
     },
     {
         id: 12,
+        img: gitLogo,
+        title: "Git"
+    },
+    {
+        id: 13,
+        img: figmaLogo,
+        title: "Figma"
+    },
+    {
+        id: 14,
+        img: csharpLogo,
+        title: "C#"
+    },
+    {
+        id: 15,
         img: unityLogo,
         title: "Unity"
+    },
+    {
+        id: 16,
+        img: pythonLogo,
+        title: "Python"
+    },
+    {
+        id: 17,
+        img: javaLogo,
+        title: "Java"
     },
 ]
 
