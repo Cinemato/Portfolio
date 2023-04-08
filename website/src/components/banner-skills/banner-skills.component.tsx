@@ -4,6 +4,7 @@ import SKILLS_DATA, { Skill } from '../../data/skills';
 
 const BannerSkills = () => {
   const CREATE_CIRCLE_MS = 4500;
+  const CREATE_CIRCLE_MS_MOBILE = 7000;
   const ARRAY_OF_SKILLS: Skill[] = [];
   const isFirstRender = useRef(true);
 
@@ -74,8 +75,14 @@ const BannerSkills = () => {
 
     if(isFirstRender.current === true) {
       createDiagonalCircle();
-      const spawnCirclesInterval = setInterval(createDiagonalCircle, CREATE_CIRCLE_MS);
-      return () => clearInterval(spawnCirclesInterval);   
+      if(window.screen.width <= 500) {
+        let spawnCirclesInterval = setInterval(createDiagonalCircle, CREATE_CIRCLE_MS_MOBILE);
+        return () => clearInterval(spawnCirclesInterval); 
+      }
+      else {
+        let spawnCirclesInterval = setInterval(createDiagonalCircle, CREATE_CIRCLE_MS);
+        return () => clearInterval(spawnCirclesInterval); 
+      } 
     }
   }, [])
 
