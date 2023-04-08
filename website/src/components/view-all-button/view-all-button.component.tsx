@@ -2,12 +2,13 @@ import React from 'react';
 import './view-all-button.component.css';
 
 interface IProps {
-  content: string
+  content: string,
+  onClick: () => void
 }
 
-const ViewAllButton: React.FC<IProps> = ({content}) => {
+const ViewAllButton: React.FC<IProps> = ({content, onClick}) => {
   return (
-    <button className='view-all' type='button'>{content}</button>
+    <button className='view-all' type='button' onClick={onClick}>{content}</button>
   )
 }
 

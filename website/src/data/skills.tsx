@@ -15,6 +15,7 @@ import javaLogo from '../assets/skills/java-logo.svg';
 import mysqlLogo from '../assets/skills/mysql-logo.svg';
 import reduxLogo from '../assets/skills/redux-logo.svg';
 import unityLogo from '../assets/skills/unity-logo.svg';
+import postmanLogo from '../assets/skills/postman-logo.svg';
 import { Skill } from './interfaces';
 
 
@@ -30,7 +31,7 @@ const SKILLS_DATA: Skill[] = [
         title: "Laravel"
     },
     {
-        id: 4,
+        id: 3,
         img: reactLogo,
         title: "React"
     },
@@ -60,7 +61,7 @@ const SKILLS_DATA: Skill[] = [
         title: "Redux"
     },
     {
-        id: 10,
+        id: 9,
         img: mysqlLogo,
         title: "MySQL"
     },
@@ -71,36 +72,41 @@ const SKILLS_DATA: Skill[] = [
     },
     {
         id: 11,
+        img: postmanLogo,
+        title: "Postman"
+    },
+    {
+        id: 12,
         img: firebaseLogo,
         title: "Firebase"
     },
     {
-        id: 12,
+        id: 13,
         img: gitLogo,
         title: "Git"
     },
     {
-        id: 13,
+        id: 14,
         img: figmaLogo,
         title: "Figma"
     },
     {
-        id: 14,
+        id: 15,
         img: csharpLogo,
         title: "C#"
     },
     {
-        id: 15,
+        id: 16,
         img: unityLogo,
         title: "Unity"
     },
     {
-        id: 16,
+        id: 17,
         img: pythonLogo,
         title: "Python"
     },
     {
-        id: 17,
+        id: 18,
         img: javaLogo,
         title: "Java"
     },

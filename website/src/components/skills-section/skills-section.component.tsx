@@ -24,7 +24,7 @@ const SkillsSection = () => {
               return <SkillInfo skill={skill} key={skill.id} view={isViewAll} />
             })}
         </div>
-        <button onClick={viewAllToggle}><ViewAllButton content={isViewAll ? "Hide" : "View all"} /></button>
+        <ViewAllButton content={isViewAll ? "Hide" : "View all"} onClick={viewAllToggle} />
     </div>
   )
 }

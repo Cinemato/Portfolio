@@ -13,13 +13,13 @@
 
 .section-list-item-image {
     margin-right: 50px;
-    border: 1px solid #FF3C68;
     height: 100%;
 }
 
 .section-list-item-image > img {
     width: 500px;
     height: 100%;
+    border: 1px solid #FF3C68;
 }
 
 @media screen and (max-width: 1200px){

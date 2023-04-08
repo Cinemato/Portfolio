@@ -10,19 +10,21 @@ import './section-list.component.css'
 interface IProps {
     path: string,
     title: string,
-    items: ListItem[]
+    items: ListItem[],
+    count: number
 }
 
-const SectionList: React.FC<IProps> = ({path, items, title}) => {
+const SectionList: React.FC<IProps> = ({path, title, items, count}) => {
     return (
         <div className="section-list-container">
             <SectionTitle title={title} />
             <div className="section-list-items-container">
-                {items.map(item => {
-                    return <SectionListItem item={item} key={item.id} />
+                {items.map((item, index) => {
+                    if(index < count)
+                        return <SectionListItem item={item} key={item.id} />
                 })}
             </div>
-            <Link to={path}><ViewAllButton content='View all'/></Link>
+            <Link to={path}><ViewAllButton content='View all' onClick={() => {}} /></Link>
         </div>
     )
 }
