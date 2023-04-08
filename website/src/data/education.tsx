@@ -24,7 +24,7 @@ const EDUCATION_DATA: ListItem[] = [
     },
     {
         id: 3,
-        title: "Complete React Developer in 2023 (w/ Redux, Hooks, GraphQL)",
+        title: "Complete React Developer (w/ Redux, Hooks, GraphQL)",
         url: "https://www.udemy.com/course/complete-react-developer-zero-to-mastery/",
         img: ztmreact,
         highlight: "ZeroToMastery (ZTM)",
