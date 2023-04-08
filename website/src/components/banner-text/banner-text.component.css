@@ -32,7 +32,7 @@
     margin-right: 10px;
 }
 
-.banner-text > button {
+.banner-text > a > button {
     margin-top: 15px;
     background: #FF3C68;
     color: white;
@@ -43,7 +43,7 @@
     transition: box-shadow 0.2s linear, transform 0.2s linear, font-weight 0.2s linear;
 }
 
-.banner-text > button:hover {
+.banner-text > a > button:hover {
     box-shadow: 5px 5px black;
     transform: translateX(-5px);
     font-weight: 700;

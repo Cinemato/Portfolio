@@ -1,6 +1,7 @@
 import React from 'react'
 import './banner-text.component.css';
 import TypewriterComponent from 'typewriter-effect';
+import Resume from '../../assets/files/KhaledAlhaririResume.pdf';
 
 const BannerText = () => {
   return (
@@ -25,7 +26,9 @@ const BannerText = () => {
             />
           </span>
         </div>
-        <button type='button'>Download Resume</button>
+        <a href={Resume} download="KhaledAlhaririResume" target='_blank'>
+          <button type='button'>Download Resume</button>
+        </a>
     </div>
   )
 }
