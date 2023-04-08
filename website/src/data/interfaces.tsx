@@ -1,6 +1,7 @@
 interface ListItem {
     id: number,
     title: string,
+    url: string,
     img: string,
     highlight: string,
     date: string,

@@ -12,7 +12,7 @@ const SectionListItemInfo: React.FC<IProps> = ({item}) => {
     <div className="section-list-item-info">
         <div className="item-title">
           <h3>{item.title}</h3>
-          <SectionButton />
+          <a href={item.url} target='_blank'><SectionButton /></a>
         </div>
         <div className="item-date-highlight-container">
           <p className='item-date'>{item.date}</p>

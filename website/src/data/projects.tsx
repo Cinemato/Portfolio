@@ -13,6 +13,7 @@ const PROJECTS_DATA: ListItem[] = [
     {
         id: 1,
         title: "LazLo Shop Ecommerce Website",
+        url: "https://lazloshop.com/en",
         img: lazloshop,
         highlight: "PHP / Laravel / MySQL / HTML / CSS / JavaScript",
         date: "2022 - 2023",
@@ -21,6 +22,7 @@ const PROJECTS_DATA: ListItem[] = [
     {
         id: 2,
         title: "Sociality.io Take Home Assignment",
+        url: "https://comforting-semifreddo-f8a34f.netlify.app/",
         img: sociality,
         highlight: "React / JavaScript / HTML / CSS",
         date: "Sep 2022",
@@ -29,14 +31,16 @@ const PROJECTS_DATA: ListItem[] = [
     {
         id: 3,
         title: "Turtle Blast - 2D Shooter",
+        url: "https://play.google.com/store/apps/details?id=com.Cinemato.TurtleBlast",
         img: turtleblast,
         highlight: "Unity / C#",
         date: "Aug 2020",
-        desc: "Turtle Blast is a mobile video game I developed for fun during the COVID-19 epidemic. During 2020, I have focused on building mobile video games and Turtle Blast was one of them. It is a 2D shooter game with 5 different enemies, 4 different powerups, and 3 different weapons to choose from. It includes a day/night cycle during the game and has a variety of skins. It also has an ad system where watching an ad allows the player to try again with the same score once. The game is currently available on the Google Play Store for free."
+        desc: "Turtle Blast is a mobile video game I developed for fun during the COVID-19 epidemic. During 2020, I have focused on building mobile video games and Turtle Blast was one of them. It is a 2D shooter game with 5 different enemies, 4 different powerups, and 3 different weapons to choose from. It includes a day/night cycle during the game and has a variety of skins. It also has an ad system where watching an ad allows the player to try again with the same score once. The game is currently available on the Google Play Store for free and has over 1000 downloads."
     },
     {
         id: 4,
         title: "Portfolio Website",
+        url: "https://khaledalhariri.com/",
         img: portfolio,
         highlight: "React / TypeScript / HTML / CSS / Figma",
         date: "Mar 2023",
@@ -45,6 +49,7 @@ const PROJECTS_DATA: ListItem[] = [
     {
         id: 5,
         title: "Video Games Website",
+        url: "https://www.cinematogames.com/",
         img: games,
         highlight: "HTML / CSS / JavaScript",
         date: "Feb 2022",
@@ -53,6 +58,7 @@ const PROJECTS_DATA: ListItem[] = [
     {
         id: 6,
         title: "Alien Dash",
+        url: "https://play.google.com/store/apps/details?id=com.Cinemato.AlienDash",
         img: aliendash,
         highlight: "Unity / C#",
         date: "Mar 2020",
@@ -61,6 +67,7 @@ const PROJECTS_DATA: ListItem[] = [
     {
         id: 7,
         title: "Restaurant Website",
+        url: "https://github.com/Cinemato/Restaurant-Website-Project",
         img: restaurant,
         highlight: "HTML / CSS / Bootstrap / PHP / MySQL",
         date: "May 2021",
@@ -69,6 +76,7 @@ const PROJECTS_DATA: ListItem[] = [
     {
         id: 8,
         title: "Cookbook Website Design",
+        url: "https://github.com/Cinemato/Cookbook-website-design",
         img: cookbook,
         highlight: "HTML / CSS",
         date: "Jun 2021",
@@ -77,6 +85,7 @@ const PROJECTS_DATA: ListItem[] = [
     {
         id: 9,
         title: "Coding Allstars Take Home Assignment",
+        url: "https://gorgeous-lollipop-371737.netlify.app/",
         img: classcentral,
         highlight: "PHP / HTML / CSS / JavaScript",
         date: "Feb 2023",

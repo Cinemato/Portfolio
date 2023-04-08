@@ -7,6 +7,7 @@ const EDUCATION_DATA: ListItem[] = [
     {
         id: 1,
         title: "Bachelor's of Software Engineering",
+        url: "https://bau.edu.tr/content/3879-software-engineering",
         img: bauImage,
         highlight: "Bahcesehir University (Istanbul, Turkey)",
         date: "2018 - 2022",
@@ -15,6 +16,7 @@ const EDUCATION_DATA: ListItem[] = [
     {
         id: 2,
         title: "Master's of Computer Engineering",
+        url: "https://bau.edu.tr/content/9157-computer-engineering-english-thesis-non-thesis-program-definition",
         img: bauImage,
         highlight: "Bahcesehir University (Istanbul, Turkey)",
         date: "2022 - current",
@@ -23,6 +25,7 @@ const EDUCATION_DATA: ListItem[] = [
     {
         id: 3,
         title: "Complete React Developer in 2023 (w/ Redux, Hooks, GraphQL)",
+        url: "https://www.udemy.com/course/complete-react-developer-zero-to-mastery/",
         img: ztmreact,
         highlight: "ZeroToMastery (ZTM)",
         date: "Nov 2022",
@@ -31,6 +34,7 @@ const EDUCATION_DATA: ListItem[] = [
     {
         id: 4,
         title: "Complete C# Unity Game Developer 2D Online Course",
+        url: "https://www.udemy.com/course/unitycourse/?src=sac&kw=game+dev+2d",
         img: gamedev,
         highlight: "GameDev.tv",
         date: "Jan 2020",
