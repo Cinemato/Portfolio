@@ -19,7 +19,7 @@ const EDUCATION_DATA: ListItem[] = [
         url: "https://bau.edu.tr/content/9157-computer-engineering-english-thesis-non-thesis-program-definition",
         img: bauImage,
         highlight: "Bahcesehir University (Istanbul, Turkey)",
-        date: "2022 - current",
+        date: "2022 - now",
         desc: "I am currently taking a Master’s of Computer Engineering at Bahcesehir University and my current GPA is 3.83. I am expected to graduate in June of 2024. So far I have taken many courses including Optimization with Artificial Intelligence, Image and Video Processing, Data Mining, and many more. I will be having my thesis in 2024 during the second year of my degree."
     },
     {
