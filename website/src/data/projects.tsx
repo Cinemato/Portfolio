@@ -49,7 +49,7 @@ const PROJECTS_DATA: ListItem[] = [
     {
         id: 5,
         title: "Video Games Website",
-        url: "https://www.cinematogames.com/",
+        url: "https://cinemato.github.io",
         img: games,
         highlight: "HTML / CSS / JavaScript",
         date: "Feb 2022",

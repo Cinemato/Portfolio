@@ -70,19 +70,14 @@ const BannerSkills = () => {
           circle.style.visibility = 'visible';
         }
       }
+      
       isFirstRender.current = false;
     }
 
-    if(isFirstRender.current === true) {
+    if(isFirstRender.current) {
       createDiagonalCircle();
-      if(window.screen.width <= 500) {
-        let spawnCirclesInterval = setInterval(createDiagonalCircle, CREATE_CIRCLE_MS_MOBILE);
-        return () => clearInterval(spawnCirclesInterval); 
-      }
-      else {
-        let spawnCirclesInterval = setInterval(createDiagonalCircle, CREATE_CIRCLE_MS);
-        return () => clearInterval(spawnCirclesInterval); 
-      } 
+      let spawnCirclesInterval = setInterval(createDiagonalCircle, window.screen.width <= 500 ? CREATE_CIRCLE_MS_MOBILE : CREATE_CIRCLE_MS);
+      return () => clearInterval(spawnCirclesInterval);
     }
   }, [])
 
