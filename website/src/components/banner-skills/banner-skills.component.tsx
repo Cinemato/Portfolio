@@ -76,8 +76,8 @@ const BannerSkills = () => {
 
     if(isFirstRender.current) {
       createDiagonalCircle();
-      let spawnCirclesInterval = setInterval(createDiagonalCircle, window.screen.width <= 500 ? CREATE_CIRCLE_MS_MOBILE : CREATE_CIRCLE_MS);
-      return () => clearInterval(spawnCirclesInterval);
+      setInterval(createDiagonalCircle, window.screen.width <= 500 ? CREATE_CIRCLE_MS_MOBILE : CREATE_CIRCLE_MS);
+      
     }
   }, [])
 
