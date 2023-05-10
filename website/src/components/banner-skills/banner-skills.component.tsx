@@ -14,6 +14,7 @@ const BannerSkills = () => {
     let maxScreenSize = window.screen.width * 0.85;
     let maxCircles = 6;
     let prevInitPos = Math.floor(Math.random() * maxScreenSize) - minScreenSize;
+    let spawnCirclesInterval: any;
 
     const createDiagonalCircle = () => {
       if(window.screen.width <= 500) {
@@ -76,9 +77,11 @@ const BannerSkills = () => {
 
     if(isFirstRender.current) {
       createDiagonalCircle();
-      setInterval(createDiagonalCircle, window.screen.width <= 500 ? CREATE_CIRCLE_MS_MOBILE : CREATE_CIRCLE_MS);
-      
+      spawnCirclesInterval = setInterval(createDiagonalCircle, window.screen.width <= 500 ? CREATE_CIRCLE_MS_MOBILE : CREATE_CIRCLE_MS);
     }
+
+    window.addEventListener('blur', () => clearInterval(spawnCirclesInterval));
+    window.addEventListener('focus', () => spawnCirclesInterval = setInterval(createDiagonalCircle, window.screen.width <= 500 ? CREATE_CIRCLE_MS_MOBILE : CREATE_CIRCLE_MS));
   }, [])
 
   return (
