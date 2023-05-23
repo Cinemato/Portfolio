@@ -14,7 +14,7 @@ const BannerSkills = () => {
     let maxScreenSize = window.screen.width * 0.85;
     let maxCircles = 6;
     let prevInitPos = Math.floor(Math.random() * maxScreenSize) - minScreenSize;
-    let spawnCirclesInterval: any;
+    let spawnCirclesInterval: NodeJS.Timer;
 
     const createDiagonalCircle = () => {
       if(window.screen.width <= 500) {

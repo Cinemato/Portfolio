@@ -31,8 +31,8 @@ const ContactForm = () => {
           <p>Message sent successfully!</p>
         </div>
         <p>Want to send me a message quickly?</p>
-        <FormInput name="name" label="Full Name:" hasSent={hasSent} />
-        <FormInput name="email" label="Email:" hasSent={hasSent} />
+        <FormInput type="text" name="name" label="Full Name:" hasSent={hasSent} />
+        <FormInput type="email" name="email" label="Email:" hasSent={hasSent} />
         <FormTextarea name="message" label="Message:" hasSent={hasSent} />
         <button>Send Message</button>
     </form>
