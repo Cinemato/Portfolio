@@ -16,7 +16,7 @@ import mysqlLogo from '../assets/skills/mysql-logo.svg';
 import reduxLogo from '../assets/skills/redux-logo.svg';
 import unityLogo from '../assets/skills/unity-logo.svg';
 import postmanLogo from '../assets/skills/postman-logo.svg';
-import bootstrapLogo from '../assets/skills/boostrap-logo.svg';
+import bootstrapLogo from '../assets/skills/bootstrap-logo.svg';
 import jqueryLogo from '../assets/skills/jquery-logo.svg';
 import { Skill } from './interfaces';
 
