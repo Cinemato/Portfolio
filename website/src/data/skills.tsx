@@ -16,6 +16,8 @@ import mysqlLogo from '../assets/skills/mysql-logo.svg';
 import reduxLogo from '../assets/skills/redux-logo.svg';
 import unityLogo from '../assets/skills/unity-logo.svg';
 import postmanLogo from '../assets/skills/postman-logo.svg';
+import bootstrapLogo from '../assets/skills/boostrap-logo.svg';
+import jqueryLogo from '../assets/skills/jquery-logo.svg';
 import { Skill } from './interfaces';
 
 
@@ -110,6 +112,16 @@ const SKILLS_DATA: Skill[] = [
         img: javaLogo,
         title: "Java"
     },
+    {
+        id: 19,
+        img: jqueryLogo,
+        title: "JQuery"
+    },
+    {
+        id: 20,
+        img: bootstrapLogo,
+        title: "Bootstrap"
+    }
 ]
 
 export type { Skill };
