@@ -18,6 +18,7 @@ import unityLogo from '../assets/skills/unity-logo.svg';
 import postmanLogo from '../assets/skills/postman-logo.svg';
 import bootstrapLogo from '../assets/skills/bootstrap-logo.svg';
 import jqueryLogo from '../assets/skills/jquery-logo.svg';
+import aspnetLogo from '../assets/skills/aspnet-logo.svg';
 import { Skill } from './interfaces';
 
 
@@ -99,29 +100,34 @@ const SKILLS_DATA: Skill[] = [
     },
     {
         id: 16,
-        img: unityLogo,
-        title: "Unity"
+        img: aspnetLogo,
+        title: "ASP.NET Core"
     },
     {
         id: 17,
-        img: pythonLogo,
-        title: "Python"
+        img: bootstrapLogo,
+        title: "Bootstrap"
     },
     {
         id: 18,
-        img: javaLogo,
-        title: "Java"
-    },
-    {
-        id: 19,
         img: jqueryLogo,
         title: "jQuery"
     },
     {
+        id: 19,
+        img: unityLogo,
+        title: "Unity"
+    },
+    {
         id: 20,
-        img: bootstrapLogo,
-        title: "Bootstrap"
-    }
+        img: pythonLogo,
+        title: "Python"
+    },
+    {
+        id: 21,
+        img: javaLogo,
+        title: "Java"
+    },
 ]
 
 export type { Skill };
