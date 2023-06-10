@@ -15,7 +15,11 @@ const ContactInfo = () => {
         </div>
         <div className="contact-info">
             <Phone />
-            <Link to="tel:+90 539 361 5823" className='contact-text'>+90 539 361 5823</Link>
+            <Link to="tel:+965 52550206" className='contact-text'>Kuwait: +965 52550206</Link>
+        </div>
+        <div className="contact-info">
+            <Phone />
+            <Link to="tel:+90 539 361 5823" className='contact-text'>Turkey: +90 539 361 5823</Link>
         </div>
         <div className="social-info">
             <Link to="https://www.linkedin.com/in/khaled-alhariri/" target='_blank'><Linkedin /></Link>
