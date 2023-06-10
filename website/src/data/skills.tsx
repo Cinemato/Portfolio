@@ -115,7 +115,7 @@ const SKILLS_DATA: Skill[] = [
     {
         id: 19,
         img: jqueryLogo,
-        title: "JQuery"
+        title: "jQuery"
     },
     {
         id: 20,
