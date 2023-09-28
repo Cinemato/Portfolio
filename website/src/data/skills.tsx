@@ -10,7 +10,6 @@ import jsLogo from '../assets/skills/js-logo.svg';
 import tsLogo from '../assets/skills/ts-logo.svg';
 import cssLogo from '../assets/skills/css-logo.svg';
 import reactLogo from '../assets/skills/react-logo.svg';
-import xamppLogo from '../assets/skills/xampp-logo.svg';
 import javaLogo from '../assets/skills/java-logo.svg';
 import mysqlLogo from '../assets/skills/mysql-logo.svg';
 import reduxLogo from '../assets/skills/redux-logo.svg';
@@ -25,106 +24,101 @@ import { Skill } from './interfaces';
 const SKILLS_DATA: Skill[] = [
     {
         id: 1,
-        img: phpLogo,
-        title: "PHP"
-    },
-    {
-        id: 2,
-        img: laravelLogo,
-        title: "Laravel"
-    },
-    {
-        id: 3,
-        img: reactLogo,
-        title: "React"
-    },
-    {
-        id: 4,
-        img: jsLogo,
-        title: "JavaScript"
-    },
-    {
-        id: 5,
-        img: tsLogo,
-        title: "TypeScript"
-    },
-    {
-        id: 6,
-        img: htmlLogo,
-        title: "HTML"
-    },
-    {
-        id: 7,
-        img: cssLogo,
-        title: "CSS"
-    },
-    {
-        id: 8,
-        img: reduxLogo,
-        title: "Redux"
-    },
-    {
-        id: 9,
-        img: mysqlLogo,
-        title: "MySQL"
-    },
-    {
-        id: 10,
-        img: xamppLogo,
-        title: "XAMPP"
-    },
-    {
-        id: 11,
-        img: postmanLogo,
-        title: "Postman"
-    },
-    {
-        id: 12,
-        img: firebaseLogo,
-        title: "Firebase"
-    },
-    {
-        id: 13,
-        img: gitLogo,
-        title: "Git"
-    },
-    {
-        id: 14,
-        img: figmaLogo,
-        title: "Figma"
-    },
-    {
-        id: 15,
         img: csharpLogo,
         title: "C#"
     },
     {
-        id: 16,
+        id: 2,
         img: aspnetLogo,
         title: "ASP.NET Core"
     },
     {
-        id: 17,
+        id: 3,
+        img: phpLogo,
+        title: "PHP"
+    },
+    {
+        id: 4,
+        img: laravelLogo,
+        title: "Laravel"
+    },
+    {
+        id: 5,
+        img: reactLogo,
+        title: "React"
+    },
+    {
+        id: 6,
+        img: jsLogo,
+        title: "JavaScript"
+    },
+    {
+        id: 7,
+        img: htmlLogo,
+        title: "HTML"
+    },
+    {
+        id: 8,
+        img: cssLogo,
+        title: "CSS"
+    },
+    {
+        id: 9,
+        img: tsLogo,
+        title: "TypeScript"
+    },
+    {
+        id: 10,
+        img: reduxLogo,
+        title: "Redux"
+    },
+    {
+        id: 11,
+        img: mysqlLogo,
+        title: "MySQL"
+    },
+    {
+        id: 12,
+        img: postmanLogo,
+        title: "Postman"
+    },
+    {
+        id: 13,
+        img: firebaseLogo,
+        title: "Firebase"
+    },
+    {
+        id: 14,
+        img: gitLogo,
+        title: "Git"
+    },
+    {
+        id: 15,
+        img: figmaLogo,
+        title: "Figma"
+    },
+    {
+        id: 16,
         img: bootstrapLogo,
         title: "Bootstrap"
     },
     {
-        id: 18,
+        id: 17,
         img: jqueryLogo,
         title: "jQuery"
     },
     {
-        id: 19,
+        id: 18,
         img: unityLogo,
         title: "Unity"
     },
     {
-        id: 20,
+        id: 19,
         img: pythonLogo,
         title: "Python"
     },
     {
-        id: 21,
+        id: 20,
         img: javaLogo,
         title: "Java"
     },
