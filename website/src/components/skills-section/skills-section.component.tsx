@@ -1,11 +1,15 @@
 import { useState } from 'react';
 import './skills-section.component.css';
-import SKILLS_DATA from '../../data/skills';
+import { Skill } from '../../data/interfaces';
 import SectionTitle from '../section-title/section-title.component';
 import SkillInfo from '../skill-info/skill-info.component';
 import ViewAllButton from '../view-all-button/view-all-button.component';
 
-const SkillsSection = () => {
+interface IProps {
+  skillsList: Skill[]
+}
+
+const SkillsSection: React.FC<IProps> = ({skillsList}) => {
   const [isViewAll, setIsViewAll] = useState(false);
 
   const viewAllToggle = (): void => {
@@ -16,7 +20,7 @@ const SkillsSection = () => {
     <div className="skills-section-container">
         <SectionTitle title="Technical Skills" />
         <div className="skills-container">
-            {SKILLS_DATA.map((skill, index) => {
+            {[...skillsList].sort((a,b) => a.order - b.order).map((skill, index) => {
               if(index < 8) {
                 return <SkillInfo skill={skill} key={skill.id} view={true} />
               }

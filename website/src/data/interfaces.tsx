@@ -1,17 +1,19 @@
 interface ListItem {
-    id: number,
+    id?: string,
     title: string,
     url: string,
-    img: string,
+    image: string,
     highlight: string,
     date: string,
-    desc: string
+    desc: string,
+    order: number
 }
 
 interface Skill {
-    id: number,
-    img: string
-    title?: string
+    id?: string,
+    title: string,
+    image: string,
+    order: number
 }
 
 export type { ListItem };

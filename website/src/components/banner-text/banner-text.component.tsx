@@ -26,7 +26,7 @@ const BannerText = () => {
             />
           </span>
         </div>
-        <a href={Resume} download="Khaled_Al Hariri_Resume_KW" target='_blank'>
+        <a href={Resume} download="Khaled_Al Hariri_Resume_KW" target='_blank' rel='noreferrer'>
           <button type='button'>Download Resume</button>
         </a>
     </div>

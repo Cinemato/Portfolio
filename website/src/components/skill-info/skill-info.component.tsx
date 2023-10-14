@@ -10,7 +10,7 @@ interface IProps {
 const SkillInfo: React.FC<IProps> = ({skill, view}) => {
   return (
     <div className={`skill ${view ? 'skill-active' : ''}`}>
-        <img src={skill.img} alt={skill.title} width="125px" />
+        <img src={skill.image} alt={skill.title} width="125px" />
         <p>{skill.title}</p>
     </div>
   )

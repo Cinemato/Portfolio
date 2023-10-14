@@ -5,19 +5,24 @@ import MobileNavBar from '../../components/mobile-nav-bar/mobile-nav-bar.compone
 import Banner from '../../components/banner/banner.component'
 import SkillsSection from '../../components/skills-section/skills-section.component';
 import SectionList from '../../components/section-list/section-list.component';
-import PROJECTS_DATA from '../../data/projects';
-import EDUCATION_DATA from '../../data/education';
 import Copyright from '../../components/copyright/copyright.component';
+import { ListItem, Skill } from '../../data/interfaces';
 
-const HomePage = () => {
+interface IProps {
+  projectsList: ListItem[],
+  educationList: ListItem[],
+  skillsList: Skill[]
+}
+
+const HomePage: React.FC<IProps> = ({projectsList, educationList, skillsList}) => {
   return (
     <div className="home-page-container">
       <NavBar activePage="home" />
       <MobileNavBar activePage="home" />
-      <Banner />
-      <SkillsSection />
-      <SectionList path="/projects" title="Projects & Works" items={PROJECTS_DATA} count={3}/>
-      <SectionList path="/education" title="Education" items={EDUCATION_DATA} count={2} />
+      <Banner skillsList={skillsList} />
+      <SkillsSection skillsList={skillsList} />
+      <SectionList path="/projects" title="Projects & Works" items={projectsList} count={3} />
+      <SectionList path="/education" title="Education" items={educationList} count={2} />
       <Copyright />
     </div>
   )

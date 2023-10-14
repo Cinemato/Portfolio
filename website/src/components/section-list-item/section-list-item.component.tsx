@@ -11,7 +11,7 @@ const SectionListItem: React.FC<IProps> = ({item}) => {
   return (
     <div className="section-list-item">
         <div className='section-list-item-image'>
-          <img src={item.img} alt="" />
+          <img src={item.image} alt="" />
         </div>
         <SectionListItemInfo item={item} />
     </div>

@@ -19,7 +19,7 @@ const SectionList: React.FC<IProps> = ({path, title, items, count}) => {
         <div className="section-list-container">
             <SectionTitle title={title} />
             <div className="section-list-items-container">
-                {items.map((item, index) => {
+                {[...items].sort((a,b) => a.order - b.order).map((item, index) => {
                     if(index < count)
                         return <SectionListItem item={item} key={item.id} />
                 })}
