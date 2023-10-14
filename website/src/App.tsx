@@ -16,7 +16,7 @@ function App() {
   useEffect(() => {
     if(!hasLoaded) {
       dispatch(getInfo());
-      console.log("test");
+      console.log("Data Loaded.");
     } 
   }, [dispatch, hasLoaded]);
 

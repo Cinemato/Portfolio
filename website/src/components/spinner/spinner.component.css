@@ -1,0 +1,17 @@
+.spinner > svg {
+    width: 100px;
+    height: 100px;
+    margin: 10px 0;
+    animation: rotation 1s steps(100, start) infinite;
+    stroke: #FF3C68;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
