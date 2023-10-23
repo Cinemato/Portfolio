@@ -8,16 +8,20 @@ export const infoSlice = createSlice({
         projects: [] as ListItem[],
         education: [] as ListItem[],
         skills: [] as Skill[],
-        hasLoaded: false
+        storedDate: new Date(),
+        hasLoaded: false,
     },
     reducers: {
-
+        setHasLoaded: (state, action) => {
+            state.hasLoaded = action.payload;
+        }
     },
     extraReducers: (builder) => {
         builder.addCase(getInfo.fulfilled, (state, action) => {
             state.projects = action.payload.projects;
             state.education = action.payload.education;
             state.skills = action.payload.skills;
+            state.storedDate = new Date();
             state.hasLoaded = true;
         });
     }
@@ -30,6 +34,7 @@ export const getInfo = createAsyncThunk("info/getInfo", async () => {
 
     const info = {projects, education, skills};
     return info;
-})
+});
 
 export default infoSlice.reducer;
+export const { setHasLoaded } = infoSlice.actions;

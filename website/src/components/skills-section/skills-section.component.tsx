@@ -38,7 +38,6 @@ const SkillsSection: React.FC<IProps> = ({skillsList}) => {
         </>   
         : <Spinner />
         }
-        
     </div>
   )
 }
