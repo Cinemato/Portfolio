@@ -87,11 +87,6 @@ const BannerSkills: React.FC<IProps> = ({skillsList}) => {
   
       window.addEventListener('blur', () => clearInterval(spawnCirclesInterval));
       window.addEventListener('focus', () => spawnCirclesInterval = setInterval(createDiagonalCircle, window.screen.width <= 500 ? CREATE_CIRCLE_MS_MOBILE : CREATE_CIRCLE_MS));
-      document.addEventListener("visibilitychange", () => {
-        if(document.hidden) {
-          clearInterval(spawnCirclesInterval);
-        }
-      });
     }
   }, [skillsList])
 
