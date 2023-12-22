@@ -11,23 +11,23 @@ const BannerSkills: React.FC<IProps> = ({skillsList}) => {
   const CREATE_CIRCLE_MS_MOBILE = 7000;
   const ARRAY_OF_SKILLS: Skill[] = [];
   const isFirstRender = useRef(true);
+  const spawnCirclesIntervalRef = useRef<NodeJS.Timer | null>(null);
 
   useEffect(() => {
     if(skillsList.length > 0) {
       const skillsContainer = document.getElementsByClassName('banner-skills-container')[0];
-      let minScreenSize = window.screen.width * 0.08;
-      let maxScreenSize = window.screen.width * 0.85;
+      let minScreenSize = window.innerWidth * 0.08
+      let maxScreenSize = window.innerWidth * 0.85
       let maxCircles = 6;
       let prevInitPos = Math.floor(Math.random() * maxScreenSize) - minScreenSize;
-      let spawnCirclesInterval: NodeJS.Timer;
   
       const createDiagonalCircle = () => {
-        if(window.screen.width <= 500) {
-          minScreenSize = window.screen.width * 0.8;
+        if(window.innerWidth <= 550) {
+          minScreenSize = window.innerWidth * 0.8
           maxCircles = 4;
         }
         else {
-          minScreenSize = window.screen.width * 0.08;
+          minScreenSize = window.innerWidth * 0.08
           maxCircles = 6;
         }
   
@@ -56,7 +56,7 @@ const BannerSkills: React.FC<IProps> = ({skillsList}) => {
         let posTop = -150;
         let posLeft = Math.floor(Math.random() * maxScreenSize) - minScreenSize;
   
-        while(Math.abs(posLeft - prevInitPos) < (window.screen.width * 0.13)) {
+        while(Math.abs(posLeft - prevInitPos) < (window.innerWidth * 0.13)) {
           posLeft = Math.floor(Math.random() * maxScreenSize) - minScreenSize;
         }
         
@@ -80,13 +80,40 @@ const BannerSkills: React.FC<IProps> = ({skillsList}) => {
         isFirstRender.current = false;
       }
   
-      if(isFirstRender.current) {
+      if (isFirstRender.current) {
         createDiagonalCircle();
-        spawnCirclesInterval = setInterval(createDiagonalCircle, window.screen.width <= 500 ? CREATE_CIRCLE_MS_MOBILE : CREATE_CIRCLE_MS);
+        spawnCirclesIntervalRef.current = setInterval(
+          createDiagonalCircle,
+          window.innerWidth <= 500 ? CREATE_CIRCLE_MS_MOBILE : CREATE_CIRCLE_MS
+        );
       }
+
+      const handleBlur = () => {
+        // Use setTimeout to allow for a grace period before clearing the interval
+        setTimeout(() => {
+          clearInterval(spawnCirclesIntervalRef.current!);
+          spawnCirclesIntervalRef.current = null;
+        }, 1000); // Adjust the delay as needed
+      };
   
-      window.addEventListener('blur', () => clearInterval(spawnCirclesInterval));
-      window.addEventListener('focus', () => spawnCirclesInterval = setInterval(createDiagonalCircle, window.screen.width <= 500 ? CREATE_CIRCLE_MS_MOBILE : CREATE_CIRCLE_MS));
+      const handleFocus = () => {
+        if (!spawnCirclesIntervalRef.current) {
+          createDiagonalCircle();
+          spawnCirclesIntervalRef.current = setInterval(
+            createDiagonalCircle,
+            window.innerWidth <= 500 ? CREATE_CIRCLE_MS_MOBILE : CREATE_CIRCLE_MS
+          );
+        }
+      };
+  
+      window.addEventListener('blur', handleBlur);
+      window.addEventListener('focus', handleFocus);
+
+      return () => {
+        clearInterval(spawnCirclesIntervalRef.current!);
+        window.removeEventListener('blur', handleBlur);
+        window.removeEventListener('focus', handleFocus);
+      };
     }
   }, [skillsList])
 
