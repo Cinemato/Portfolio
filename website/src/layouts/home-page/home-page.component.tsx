@@ -6,20 +6,21 @@ import Banner from '../../components/banner/banner.component'
 import SkillsSection from '../../components/skills-section/skills-section.component';
 import SectionList from '../../components/section-list/section-list.component';
 import Copyright from '../../components/copyright/copyright.component';
-import { ListItem, Skill } from '../../data/interfaces';
+import { ListItem, Skill, File } from '../../data/interfaces';
 
 interface IProps {
   projectsList: ListItem[],
   educationList: ListItem[],
-  skillsList: Skill[]
+  skillsList: Skill[],
+  filesList: File[]
 }
 
-const HomePage: React.FC<IProps> = ({projectsList, educationList, skillsList}) => {
+const HomePage: React.FC<IProps> = ({projectsList, educationList, skillsList, filesList}) => {
   return (
     <div className="home-page-container">
       <NavBar activePage="home" />
       <MobileNavBar activePage="home" />
-      <Banner skillsList={skillsList} />
+      <Banner skillsList={skillsList} filesList={filesList} />
       <SkillsSection skillsList={skillsList} />
       <SectionList path="/projects" title="Projects & Works" items={projectsList} count={3} />
       <SectionList path="/education" title="Education" items={educationList} count={2} />

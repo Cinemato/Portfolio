@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { getCollectionData } from "../config/firebase";
-import { ListItem, Skill } from "../data/interfaces";
+import { ListItem, Skill, File } from "../data/interfaces";
 
 export const infoSlice = createSlice({
     name: "info",
@@ -8,6 +8,7 @@ export const infoSlice = createSlice({
         projects: [] as ListItem[],
         education: [] as ListItem[],
         skills: [] as Skill[],
+        files: [] as File[],
         storedDate: new Date(),
         hasLoaded: false,
     },
@@ -21,6 +22,7 @@ export const infoSlice = createSlice({
             state.projects = action.payload.projects;
             state.education = action.payload.education;
             state.skills = action.payload.skills;
+            state.files = action.payload.files;
             state.storedDate = new Date();
             state.hasLoaded = true;
         });
@@ -31,8 +33,9 @@ export const getInfo = createAsyncThunk("info/getInfo", async () => {
     const projects = await getCollectionData<ListItem>("projects");
     const education = await getCollectionData<ListItem>("education");
     const skills = await getCollectionData<Skill>("skills");
+    const files = await getCollectionData<File>("files");
 
-    const info = {projects, education, skills};
+    const info = {projects, education, skills, files};
     return info;
 });
 

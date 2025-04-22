@@ -16,5 +16,11 @@ interface Skill {
     order: number
 }
 
+interface File {
+    id?: string,
+    url: string
+}
+
 export type { ListItem };
 export type { Skill };
+export type { File };
