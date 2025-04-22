@@ -3,7 +3,7 @@ import './copyright.component.css'
 
 const Copyright = () => {
   return (
-    <div className='copyright'>Copyright ©2023 All rights reserved</div>
+    <div className='copyright'>Copyright ©2025 All rights reserved</div>
   )
 }
 
