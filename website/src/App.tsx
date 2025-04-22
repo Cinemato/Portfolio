@@ -11,7 +11,7 @@ import { AppDispatch, RootState } from './redux/store';
 
 function App() {
   const dispatch = useDispatch<AppDispatch>();
-  const { projects, education, skills, files, hasLoaded, storedDate } = useSelector((state: RootState) => state.info);
+  const { projects, education, skills, certs, files, hasLoaded, storedDate } = useSelector((state: RootState) => state.info);
   const RESET_DATA_AFTER_DAYS = 2;
   
   useEffect(() => {
@@ -29,7 +29,7 @@ function App() {
     <div>
       <ScrollToTop />
       <Routes>
-        <Route index element={<HomePage projectsList={projects} educationList={education} skillsList={skills} filesList={files} />}/>
+        <Route index element={<HomePage projectsList={projects} educationList={education} skillsList={skills} certsList={certs} filesList={files} />}/>
         <Route path='/projects' element={<ProjectsPage projectsList={projects} />}/>
         <Route path='/education' element={<EducationPage educationList={education} />}/>
         <Route path='/contact' element={<ContactPage />}/>

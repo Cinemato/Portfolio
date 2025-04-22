@@ -2,7 +2,7 @@ import React from 'react'
 import './banner-text.component.css';
 import TypewriterComponent from 'typewriter-effect';
 import { File } from '../../data/interfaces';
-import Resume from '../../assets/files/Khaled_Al Hariri_Resume.pdf';
+// import Resume from '../../assets/files/Khaled_Al Hariri_Resume.pdf';
 
 interface IProps {
   filesList: File[]

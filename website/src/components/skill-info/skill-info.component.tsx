@@ -4,13 +4,14 @@ import { Skill } from '../../data/interfaces'
 
 interface IProps {
     skill: Skill,
-    view: boolean
+    view: boolean,
+    width: string
 }
 
-const SkillInfo: React.FC<IProps> = ({skill, view}) => {
+const SkillInfo: React.FC<IProps> = ({skill, view, width}) => {
   return (
-    <div className={`skill ${view ? 'skill-active' : ''}`}>
-        <img src={skill.image} alt={skill.title} width="125px" />
+    <div className={`skill ${view ? 'skill-active' : ''} ${width === '175px' ? 'cert' : ''}`}>
+        <img src={skill.image} alt={skill.title} width={width} />
         <p>{skill.title}</p>
     </div>
   )

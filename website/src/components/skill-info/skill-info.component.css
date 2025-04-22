@@ -13,6 +13,7 @@
 .skill > p {
     font-size: 18px;
     margin-top: 10px;
+    text-align: center;
 }
 
 @media screen and (max-width: 1400px) {
@@ -24,5 +25,9 @@
 @media screen and (max-width: 550px) {
     .skill > img {
         width: 100px;
+    }
+
+    .cert > img {
+        width: 175px;
     }
 }

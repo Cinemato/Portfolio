@@ -8,6 +8,7 @@ export const infoSlice = createSlice({
         projects: [] as ListItem[],
         education: [] as ListItem[],
         skills: [] as Skill[],
+        certs: [] as Skill[],
         files: [] as File[],
         storedDate: new Date(),
         hasLoaded: false,
@@ -22,6 +23,7 @@ export const infoSlice = createSlice({
             state.projects = action.payload.projects;
             state.education = action.payload.education;
             state.skills = action.payload.skills;
+            state.certs = action.payload.certs;
             state.files = action.payload.files;
             state.storedDate = new Date();
             state.hasLoaded = true;
@@ -33,9 +35,10 @@ export const getInfo = createAsyncThunk("info/getInfo", async () => {
     const projects = await getCollectionData<ListItem>("projects");
     const education = await getCollectionData<ListItem>("education");
     const skills = await getCollectionData<Skill>("skills");
+    const certs = await getCollectionData<Skill>("certs");
     const files = await getCollectionData<File>("files");
 
-    const info = {projects, education, skills, files};
+    const info = {projects, education, skills, certs, files};
     return info;
 });
 

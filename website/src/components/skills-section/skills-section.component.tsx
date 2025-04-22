@@ -28,10 +28,10 @@ const SkillsSection: React.FC<IProps> = ({skillsList}) => {
           <div className="skills-container">
               {[...skillsList].sort((a,b) => a.order - b.order).map((skill, index) => {
                 if(index < 8) {
-                  return <SkillInfo skill={skill} key={skill.id} view={true} />
+                  return <SkillInfo skill={skill} key={skill.id} view={true} width='125px' />
                 }
                 
-                return <SkillInfo skill={skill} key={skill.id} view={isViewAll} />
+                return <SkillInfo skill={skill} key={skill.id} view={isViewAll} width='125px' />
               })}
           </div>
           <ViewAllButton content={isViewAll ? "Hide" : "View all"} onClick={viewAllToggle} />
